@@ -6,6 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char font[] = "Inconsolata:pixelsize=12:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
+/* static char font[] = "Inconsolata:pixelsize=12:lcdfilter=lcddefault:hintstyle=hintfull:rgba=rgb:antialias=true:autohint=true";*/
 static int borderpx = 0;
 static char shell[] = "/bin/zsh";
 static char *utmp = NULL;
@@ -58,8 +59,8 @@ static char termname[] = "st-256color";
 
 static unsigned int tabspaces = 4;
 
-/* background opacity */
-static const int alpha = 0xed;
+/* background opacity (0xed <- natural) */
+static const int alpha = 0xfd;
 
 /**
  * Solarized dark scheme (http://ethanschoonover.com/solarized)
@@ -86,8 +87,9 @@ static const char *colorname[] = {
 
     [255] = 0,  /* other colors follow */
 
+    /* #1f1f1f <- bg */
     "#1f1f1f",  /* 256: background */
-    "#fbfbfb",  /* 257: foreground */
+    "#bbbbbb",  /* 257: foreground */
 };
 
 /**
