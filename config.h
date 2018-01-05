@@ -6,7 +6,6 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char font[] = "Inconsolata:pixelsize=12:lcdfilter=lcddefault:hintstyle=hintnone:rgba=rgb:antialias=true:autohint=false";
-/* static char font[] = "Inconsolata:pixelsize=12:lcdfilter=lcddefault:hintstyle=hintfull:rgba=rgb:antialias=true:autohint=true";*/
 static int borderpx = 0;
 static char shell[] = "/bin/zsh";
 static char *utmp = NULL;
@@ -59,38 +58,13 @@ static char termname[] = "st-256color";
 
 static unsigned int tabspaces = 4;
 
-/* background opacity (0xed <- natural) */
-static const int alpha = 0xfd;
+/* background opacity (0xed <- natural 0xfd <- lesser) */
+static const int alpha = 0xed;
 
 /**
- * Solarized dark scheme (http://ethanschoonover.com/solarized)
- * Terminal colors (16 first used in escape sequence)
- */
-static const char *colorname[] = {
-    /* solarized dark */
-    "#073642",  /*   0: black    */
-    "#dc322f",  /*   1: red      */
-    "#859900",  /*   2: green    */
-    "#b58900",  /*   3: yellow   */
-    "#268bd2",  /*   4: blue     */
-    "#d33682",  /*   5: magenta  */
-    "#2aa198",  /*   6: cyan     */
-    "#eee8d5",  /*   7: white    */
-    "#002b36",  /*   8: brblack  */
-    "#cb4b16",  /*   9: brred    */
-    "#586e75",  /*  10: brgreen  */
-    "#657b83",  /*  11: bryellow */
-    "#839496",  /*  12: brblue   */
-    "#6c71c4",  /*  13: brmagenta*/
-    "#93a1a1",  /*  14: brcyan   */
-    "#fdf6e3",  /*  15: brwhite  */
-
-    [255] = 0,  /* other colors follow */
-
-    /* #1f1f1f <- bg */
-    "#1f1f1f",  /* 256: background */
-    "#bbbbbb",  /* 257: foreground */
-};
+ * Color scheme
+*/
+#include "colors/nord-dark.h"
 
 /**
  * Default colors (colorname index)
