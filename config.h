@@ -62,7 +62,7 @@ static unsigned int tabspaces = 4;
 static const int alpha = 0xed;
 
 /**
- * Color scheme
+ * Color scheme (ls colors/)
 */
 #include "colors/nord-dark.h"
 
