@@ -1,5 +1,6 @@
 /**
  * nord (https://github.com/arcticicestudio/nord)
+ * Modified-dark
  */
 
 static const char *colorname[] = {
