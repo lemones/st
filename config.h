@@ -64,7 +64,7 @@ static unsigned int tabspaces = 4;
    0xed <- natural
    0xfd <- lesser
 */
-static const int alpha = 0xfd;
+static const int alpha = 0xed;
 
 /**
  * Color scheme (ls colors/)
